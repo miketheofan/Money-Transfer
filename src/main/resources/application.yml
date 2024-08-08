@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      tracking-modes: cookie
+
+spring:
+  ## Specify the DBMS-Type
+  jpa:
+    database: MYSQL
+
+    ## Show or not log for each sql query
+    show-sql: false
+
+    # Hibernate settings are prefixed with spring.jpa.hibernate.*   // create, update or none
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
